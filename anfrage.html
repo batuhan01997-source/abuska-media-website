@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anfrage | abuska media</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="abuska media Logo" class="brand-logo">
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Start</a>
+      <a href="faq.html">FAQ</a>
+      <a href="anfrage.html" class="active">Anfrage</a>
+      <a href="agb.html">AGB &amp; Mietbedingungen</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="erlebnisse.html">Erlebnisse</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-outline btn-sm" href="anfrage.html">Anfrage senden</a>
+      <a class="btn btn-whatsapp btn-sm" href="https://wa.me/4915568776051" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="nav-toggle" aria-label="Menü öffnen"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="bg-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Anfrage</span>
+      <h2>Deine Fotobox für unvergessliche Momente</h2>
+      <p>Unverbindlich anfragen – ich prüfe die Verfügbarkeit und melde mich innerhalb von 24 Stunden persönlich bei dir.</p>
+    </div>
+
+    <!-- Direkter Weg: WhatsApp -->
+    <div class="form-card" style="margin-bottom:28px; text-align:center;">
+      <h3 style="margin-bottom:10px;">Lieber direkt schreiben?</h3>
+      <p style="color:var(--text-light); margin-bottom:20px;">Statt das Formular auszufüllen, kannst du mich auch direkt per WhatsApp erreichen.</p>
+      <a href="https://wa.me/4915568776051?text=Hallo%20Batuhan%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Fotobox%20f%C3%BCr%20meine%20Veranstaltung." target="_blank" rel="noopener" class="btn btn-whatsapp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.999.578 3.86 1.579 5.427L2 22l4.71-1.548A9.955 9.955 0 0 0 12.001 22C17.523 22 22 17.523 22 12S17.523 2 12.001 2zm0 18.2c-1.729 0-3.335-.507-4.687-1.379l-.336-.209-3.075.996 1.004-3.001-.219-.347A8.176 8.176 0 0 1 3.8 12c0-4.529 3.672-8.2 8.201-8.2 4.528 0 8.2 3.671 8.2 8.2 0 4.528-3.672 8.2-8.2 8.2z"/></svg>
+        Direkt per WhatsApp anfragen
+      </a>
+    </div>
+
+    <div class="or-divider">oder Formular ausfüllen</div>
+
+    <form class="form-card" id="anfrage-form" action="https://formspree.io/f/mwvdddqe" method="POST">
+      <input type="hidden" name="_subject" value="Neue Fotobox-Anfrage über die Website">
+      <div id="form-success" class="form-success" style="display:none;">
+        <strong>Danke für deine Anfrage!</strong> Ich melde mich innerhalb von 24 Stunden persönlich bei dir.
+      </div>
+      <div id="form-error" class="form-error" style="display:none;">
+        <strong>Ups, das hat nicht geklappt.</strong> Bitte versuch es erneut oder schreib mir direkt per <a href="https://wa.me/4915568776051" target="_blank" rel="noopener">WhatsApp</a>.
+      </div>
+      <div class="form-grid" id="form-fields">
+        <div class="field">
+          <label>Vorname <span class="req">*</span></label>
+          <input type="text" name="vorname" required>
+        </div>
+        <div class="field">
+          <label>Nachname <span class="req">*</span></label>
+          <input type="text" name="nachname" required>
+        </div>
+        <div class="field">
+          <label>E-Mail-Adresse <span class="req">*</span></label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="field">
+          <label>Telefonnummer</label>
+          <input type="tel" name="telefon" placeholder="+49 ...">
+        </div>
+        <div class="field full">
+          <label>Location / Adresse <span class="req">*</span></label>
+          <input type="text" name="location" required>
+        </div>
+        <div class="field full">
+          <label>Rechnungsadresse</label>
+          <input type="text" name="rechnungsadresse">
+        </div>
+        <div class="field">
+          <label>Wann findet eure Veranstaltung statt? <span class="req">*</span></label>
+          <input type="date" name="datum" required>
+        </div>
+        <div class="field">
+          <label>Um wieviel Uhr fängt eure Veranstaltung an?</label>
+          <input type="time" name="uhrzeit">
+        </div>
+        <div class="field full">
+          <label>Gewünschtes Fotobox-Paket</label>
+          <select name="paket" id="paket">
+            <option value="">Bitte wählen</option>
+            <option value="digital">Digital Moments (Nur Digital) – 219€</option>
+            <option value="classic">Classic Memories (350 Druck) – 279€</option>
+            <option value="premium">Premium Memories (700 Druck) – 379€</option>
+            <option value="ultimate">Ultimate Celebration (700 Druck + Audio Gästebuch) – 449€</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label>Anlass <span class="req">*</span></label>
+          <select name="anlass" required>
+            <option value="">Eine Option wählen</option>
+            <option value="hochzeit">Hochzeit</option>
+            <option value="geburtstag">Geburtstag</option>
+            <option value="firmenfeier">Firmenfeier</option>
+            <option value="sonstiges">Sonstiges</option>
+          </select>
+        </div>
+
+        <div class="field full">
+          <label>Optionale Extras</label>
+          <div class="checkbox-group">
+            <label class="checkbox-row"><input type="checkbox" name="extra_teppich"> Roter Teppich – 15€</label>
+            <label class="checkbox-row"><input type="checkbox" name="extra_staender"> Absperrständer – 20€</label>
+            <label class="checkbox-row"><input type="checkbox" name="extra_hintergrund"> Hintergrundsystem (mehrere zur Auswahl) – 30€</label>
+            <label class="checkbox-row"><input type="checkbox" name="extra_audio"> Audio-Gästebuch – 99€</label>
+            <label class="checkbox-row"><input type="checkbox" name="extra_video"> Video-Audio-Gästebuch – 149€</label>
+          </div>
+        </div>
+
+        <div class="field full">
+          <label>Nachricht / Besonderheiten</label>
+          <textarea name="nachricht"></textarea>
+        </div>
+
+        <div class="field full">
+          <label>Möchtest du die Fotobox direkt buchen oder zunächst die Verfügbarkeit anfragen? <span class="req">*</span></label>
+          <label class="radio-row"><input type="radio" name="buchungsart" value="anfragen" checked> Verfügbarkeit unverbindlich anfragen</label>
+          <label class="radio-row"><input type="radio" name="buchungsart" value="buchen"> Direkt buchen, falls zum Wunschtermin verfügbar</label>
+          <p id="billing-hint" style="display:none; font-size:0.85rem; color:var(--text-light);">Bei einer direkten Buchung reserviere ich die Fotobox verbindlich für euren Termin. Falls sie verfügbar ist, erhaltet ihr alle weiteren Informationen per E-Mail innerhalb 24 Stunden. Bitte Rechnungsadresse angeben.</p>
+        </div>
+
+        <div class="field full">
+          <label>Wie möchtest du kontaktiert werden? <span class="req">*</span></label>
+          <select name="kontaktwunsch" required>
+            <option value="">Bitte wählen</option>
+            <option value="email">Per E-Mail</option>
+            <option value="telefon">Per Telefon</option>
+            <option value="whatsapp">Per WhatsApp</option>
+          </select>
+        </div>
+      </div>
+
+      <hr class="form-divider">
+      <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">Anfragen</button>
+      <p class="form-note">Mit dem Absenden werden deine Angaben per E-Mail an Abuska Media übermittelt.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand-name">abuska media</div>
+        <p>Fotobox mieten für Hochzeit, Geburtstag &amp; Event – wir kommen zu euch, bauen auf und wieder ab.</p>
+        <a href="https://wa.me/4915568776051" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">WhatsApp Kontakt</a>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="anfrage.html">Anfrage</a></li>
+          <li><a href="erlebnisse.html">Erlebnisse</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="agb.html">AGB &amp; Mietbedingungen</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <p>E-Mail: abuska.photo@hotmail.com<br>Telefon: +49 15568 776051</p>
+        <p>Wir kommen zu eurer Location – ganz gleich, wo sie ist</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 abuska media – Batuhan Abuska. Alle Rechte vorbehalten.</span>
+      <span>Fotobox-Verleih – wir kommen zu euch</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
